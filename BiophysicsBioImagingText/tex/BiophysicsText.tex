@@ -1,0 +1,73 @@
+\documentclass[12pt]{book}
+\usepackage[vmargin=3.0cm,rmargin=3.0cm,lmargin=3.0cm]{geometry}
+\usepackage{textcomp}
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\rightmark}
+\lhead{}
+\rfoot{\thepage}
+
+%\usepackage{chngcntr}
+%\counterwithout{figure}{section}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{amsmath}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\setcounter{chapter}{1}
+%\newcommand{\mychapter}[2]{
+%    \setcounter{chapter}{#1}
+%    \setcounter{section}{0}
+%    \chapter*{#2}
+%    \addcontentsline{toc}{chapter}{#2}
+%}
+%\title{Biophysics \& Bioimaging}
+%\author{Juan Rodriguez, Kathryn Thompson, and Meredith Stewart}
+
+
+\begin{document}
+% \frontmatter
+% \maketitle
+% \mainmatter
+%\begin{copyright}{2008}
+%Juan Rodriguez, Kathryn Thompson, and Meredith Stewart
+%\end{copyright}
+\begin{titlepage}
+\centering
+    \vfill
+    {\bfseries\Huge
+        Biophysics \& Bioimaging\\
+        \vskip0.5cm
+        \small
+        Juan Rodriguez, Kathryn Thompson, and Meredith Stewart\\
+        \textcopyright 2008
+    }    
+%    \vfill
+\includegraphics[width=\textwidth]{./figures/cover.png}
+\end{titlepage}
+\tableofcontents
+
+\include{Topic1} %Locomotion
+\include{Topic2} %Fluids
+\include{Topic3} %Hearing
+\include{Topic4} %Thermoregulation
+\include{Topic5} %Vision
+\include{Topic6} %Absorption
+\include{Topic7} %Photo-excitation
+\include{Topic8} %Stat-Mech
+\include{Topic9} %Protein Structure
+\include{Topic10} %Bioimaging
+\include{Topic11} %Neuro
+\include{AppendixA} %The Appenices
+
+\end{document}
